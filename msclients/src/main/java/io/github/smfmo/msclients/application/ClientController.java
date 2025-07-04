@@ -1,12 +1,10 @@
 package io.github.smfmo.msclients.application;
 
 import io.github.smfmo.msclients.application.representation.ClientSaveRequest;
-import io.github.smfmo.msclients.domain.Client;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 
