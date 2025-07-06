@@ -1,10 +1,12 @@
 package io.github.smfmo.mscards.domain;
 
+import io.github.smfmo.mscards.domain.enums.Flags;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.UUID;
 
 @Entity

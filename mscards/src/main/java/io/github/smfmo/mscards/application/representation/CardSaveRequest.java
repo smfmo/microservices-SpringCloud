@@ -1,7 +1,7 @@
 package io.github.smfmo.mscards.application.representation;
 
 import io.github.smfmo.mscards.domain.Card;
-import io.github.smfmo.mscards.domain.Flags;
+import io.github.smfmo.mscards.domain.enums.Flags;
 
 import java.math.BigDecimal;
 

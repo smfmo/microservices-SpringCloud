@@ -1,4 +1,4 @@
-package io.github.smfmo.mscards.domain;
+package io.github.smfmo.mscards.domain.enums;
 
 public enum Flags {
     MASTERCARD,
