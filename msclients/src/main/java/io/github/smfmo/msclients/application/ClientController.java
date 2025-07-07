@@ -1,6 +1,7 @@
 package io.github.smfmo.msclients.application;
 
 import io.github.smfmo.msclients.application.representation.ClientSaveRequest;
+import io.github.smfmo.msclients.domain.Client;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/clients")
@@ -35,7 +37,7 @@ public class ClientController {
     }
 
     @GetMapping(params = "cpf")
-    public ResponseEntity<Object> customerData(@RequestParam("cpf") String cpf){
+    public ResponseEntity<Optional<Client>> customerData(@RequestParam("cpf") String cpf){
         var client = service.getByCpf(cpf);
         if (client.isEmpty()){
             return ResponseEntity.notFound().build();
