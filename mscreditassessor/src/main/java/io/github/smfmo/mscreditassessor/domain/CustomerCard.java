@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 public class CustomerCard {
 
     private String name;
-    private String flag;
-    private BigDecimal limitReleased;
+    private String cardsFlags;
+    private BigDecimal limit;
 
 }
