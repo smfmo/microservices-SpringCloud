@@ -1,19 +1,21 @@
 package io.github.smfmo.mscreditassessor.application;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import feign.FeignException;
+import io.github.smfmo.mscreditassessor.application.exception.CardRequestErrorException;
 import io.github.smfmo.mscreditassessor.application.exception.CustomerDataNotFoundException;
 import io.github.smfmo.mscreditassessor.application.exception.MicroservicesCommunicationErrorException;
 import io.github.smfmo.mscreditassessor.domain.*;
 import io.github.smfmo.mscreditassessor.infra.clients.CardsResourceClient;
 import io.github.smfmo.mscreditassessor.infra.clients.CustomerResourceClient;
+import io.github.smfmo.mscreditassessor.infra.mqueue.CardIssuanceRequestPublisher;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -21,6 +23,7 @@ public class CreditAssessorService {
 
     private final CustomerResourceClient customerResourceClient;
     private final CardsResourceClient cardsResourceClient;
+    private final CardIssuanceRequestPublisher cardIssuanceRequestPublisher;
 
     public CustomerSituation getCustomerStatus(String cpf)
             throws CustomerDataNotFoundException, MicroservicesCommunicationErrorException {
@@ -75,5 +78,15 @@ public class CreditAssessorService {
             throw new MicroservicesCommunicationErrorException(e.getMessage(), status);
         }
 
+    }
+
+    public CardRequestProtocol requestCardIssuance(CardIssuanceData data){
+        try{
+            cardIssuanceRequestPublisher.requestCard(data);
+            var protocol = UUID.randomUUID().toString();
+            return new CardRequestProtocol(protocol);
+        } catch (Exception e) {
+            throw new CardRequestErrorException(e.getMessage());
+        }
     }
 }

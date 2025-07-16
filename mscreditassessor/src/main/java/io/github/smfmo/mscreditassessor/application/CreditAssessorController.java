@@ -1,10 +1,9 @@
 package io.github.smfmo.mscreditassessor.application;
 
+import io.github.smfmo.mscreditassessor.application.exception.CardRequestErrorException;
 import io.github.smfmo.mscreditassessor.application.exception.CustomerDataNotFoundException;
 import io.github.smfmo.mscreditassessor.application.exception.MicroservicesCommunicationErrorException;
-import io.github.smfmo.mscreditassessor.domain.AssessmentData;
-import io.github.smfmo.mscreditassessor.domain.CustomerFeedback;
-import io.github.smfmo.mscreditassessor.domain.CustomerSituation;
+import io.github.smfmo.mscreditassessor.domain.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -48,6 +47,16 @@ public class CreditAssessorController {
 
         } catch (MicroservicesCommunicationErrorException e){
             return ResponseEntity.status(HttpStatus.resolve(e.getStatusCode())).body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/requests-card")
+    public ResponseEntity<?> requestCardIssuance(@RequestBody CardIssuanceData data){
+        try{
+            CardRequestProtocol cardRequestProtocol = service.requestCardIssuance(data);
+            return ResponseEntity.ok(cardRequestProtocol);
+        } catch (CardRequestErrorException e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
         }
     }
 }
