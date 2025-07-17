@@ -3,8 +3,8 @@
     name: eurekaServer
   security:
     user:
-      name: admin
-      password: admin4321
+      name: ${USERNAME_SECURITY}
+      password: ${PASSWORD_SECURITY}
 server:
   port: 8761 #porta padrao do eureka
 eureka:
