@@ -1,0 +1,471 @@
+2025-07-17T19:02:33.311-03:00  INFO 14196 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Starting MscardsApplication using Java 21.0.2 with PID 14196 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards)
+2025-07-17T19:02:33.313-03:00  INFO 14196 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:02:33.366-03:00  INFO 14196 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-17T19:02:33.367-03:00  INFO 14196 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-17T19:02:34.881-03:00  INFO 14196 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17T19:02:35.046-03:00  INFO 14196 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 153 ms. Found 2 JPA repository interfaces.
+2025-07-17T19:02:35.382-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2c6899c-b78f-3800-9aad-86807e0a90fc
+2025-07-17T19:02:35.936-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-07-17T19:02:35.957-03:00  INFO 14196 --- [mscards] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-17T19:02:35.957-03:00  INFO 14196 --- [mscards] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-17T19:02:36.040-03:00  INFO 14196 --- [mscards] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-17T19:02:36.042-03:00  INFO 14196 --- [mscards] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2673 ms
+2025-07-17T19:02:36.397-03:00  INFO 14196 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17T19:02:36.650-03:00  INFO 14196 --- [mscards] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9fd0c90b-c4af-421e-9d23-749413a5fa3f user=SA
+2025-07-17T19:02:36.653-03:00  INFO 14196 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17T19:02:36.724-03:00  INFO 14196 --- [mscards] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17T19:02:36.815-03:00  INFO 14196 --- [mscards] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-17T19:02:36.904-03:00  INFO 14196 --- [mscards] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-17T19:02:37.561-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-17T19:02:37.735-03:00  INFO 14196 --- [mscards] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-17T19:02:38.748-03:00  INFO 14196 --- [mscards] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-17T19:02:38.802-03:00  INFO 14196 --- [mscards] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:02:39.216-03:00  WARN 14196 --- [mscards] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-17T19:02:41.136-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:02:41.619-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:9fd0c90b-c4af-421e-9d23-749413a5fa3f'
+2025-07-17T19:02:41.679-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-17T19:02:42.726-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:02:42.741-03:00  INFO 14196 --- [mscards] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:02:42.794-03:00  WARN 14196 --- [mscards] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:02:42.803-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:02:42.989-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58898 (http) with context path '/'
+2025-07-17T19:02:42.991-03:00  INFO 14196 --- [mscards] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 58898
+2025-07-17T19:02:42.998-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:02:43.032-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:02:43.038-03:00  INFO 14196 --- [mscards] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:02:43.052-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:02:43.053-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:02:43.521-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:02:43.522-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:02:43.525-03:00  INFO 14196 --- [mscards] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:02:43.528-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752789763526 with initial instances count: 0
+2025-07-17T19:02:43.532-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARDS with eureka with status UP
+2025-07-17T19:02:43.533-03:00  INFO 14196 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752789763533, current=UP, previous=STARTING]
+2025-07-17T19:02:43.536-03:00  INFO 14196 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:ca7202c8a6c5343416701487c56f765d: registering service...
+2025-07-17T19:02:43.676-03:00  INFO 14196 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:ca7202c8a6c5343416701487c56f765d - registration status: 204
+2025-07-17T19:02:44.544-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:02:44.546-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-07-17T19:02:44.646-03:00  INFO 14196 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#769edb4b:0/SimpleConnection@5bcb8ac4 [delegate=amqp://guest@127.0.0.1:5672/, localPort=58907]
+2025-07-17T19:02:44.719-03:00  INFO 14196 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Started MscardsApplication in 12.932 seconds (process running for 13.697)
+2025-07-17T19:02:44.917-03:00  INFO 14196 --- [mscards] [RMI TCP Connection(1)-26.244.18.27] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-17T19:02:44.917-03:00  INFO 14196 --- [mscards] [RMI TCP Connection(1)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-17T19:02:44.920-03:00  INFO 14196 --- [mscards] [RMI TCP Connection(1)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-07-17T19:03:13.538-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:03:13.634-03:00  INFO 14196 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:03:19.253-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARDS with eureka with status DOWN
+2025-07-17T19:03:19.253-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752789799253, current=DOWN, previous=UP]
+2025-07-17T19:03:19.253-03:00  INFO 14196 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:ca7202c8a6c5343416701487c56f765d: registering service...
+2025-07-17T19:03:19.263-03:00  INFO 14196 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-07-17T19:03:19.340-03:00  INFO 14196 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:ca7202c8a6c5343416701487c56f765d - registration status: 204
+2025-07-17T19:03:20.010-03:00  INFO 14196 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-07-17T19:03:20.011-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:03:20.020-03:00  INFO 14196 --- [mscards] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-17T19:03:20.034-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:03:20.043-03:00  WARN 14196 --- [mscards] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-07-17T19:03:20.043-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17T19:03:20.045-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17T19:03:20.046-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:03:23.060-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:03:23.146-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:ca7202c8a6c5343416701487c56f765d - deregister  status: 200
+2025-07-17T19:03:23.147-03:00  INFO 14196 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-07-17T19:07:07.667-03:00  INFO 22596 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Starting MscardsApplication using Java 21.0.2 with PID 22596 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards)
+2025-07-17T19:07:07.667-03:00  INFO 22596 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:07:07.728-03:00  INFO 22596 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-17T19:07:07.728-03:00  INFO 22596 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-17T19:07:08.724-03:00  INFO 22596 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17T19:07:08.837-03:00  INFO 22596 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 2 JPA repository interfaces.
+2025-07-17T19:07:09.070-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a2c6899c-b78f-3800-9aad-86807e0a90fc
+2025-07-17T19:07:09.452-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-07-17T19:07:09.464-03:00  INFO 22596 --- [mscards] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-17T19:07:09.465-03:00  INFO 22596 --- [mscards] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-17T19:07:09.503-03:00  INFO 22596 --- [mscards] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-17T19:07:09.503-03:00  INFO 22596 --- [mscards] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1771 ms
+2025-07-17T19:07:09.734-03:00  INFO 22596 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17T19:07:09.880-03:00  INFO 22596 --- [mscards] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:88eb6e60-aaa4-47f8-9ecf-db659fc57a40 user=SA
+2025-07-17T19:07:09.882-03:00  INFO 22596 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17T19:07:09.922-03:00  INFO 22596 --- [mscards] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17T19:07:09.961-03:00  INFO 22596 --- [mscards] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-17T19:07:09.986-03:00  INFO 22596 --- [mscards] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-17T19:07:10.189-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-17T19:07:10.243-03:00  INFO 22596 --- [mscards] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-17T19:07:10.911-03:00  INFO 22596 --- [mscards] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-17T19:07:10.951-03:00  INFO 22596 --- [mscards] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:07:11.234-03:00  WARN 22596 --- [mscards] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-17T19:07:12.655-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:07:12.894-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:88eb6e60-aaa4-47f8-9ecf-db659fc57a40'
+2025-07-17T19:07:12.919-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-17T19:07:13.938-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:07:13.948-03:00  INFO 22596 --- [mscards] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:07:13.977-03:00  WARN 22596 --- [mscards] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:07:13.983-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:07:14.090-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59232 (http) with context path '/'
+2025-07-17T19:07:14.092-03:00  INFO 22596 --- [mscards] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59232
+2025-07-17T19:07:14.098-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:07:14.119-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:07:14.122-03:00  INFO 22596 --- [mscards] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:07:14.129-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:07:14.130-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:07:14.469-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:07:14.470-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:07:14.472-03:00  INFO 22596 --- [mscards] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:07:14.473-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752790034473 with initial instances count: 3
+2025-07-17T19:07:14.476-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARDS with eureka with status UP
+2025-07-17T19:07:14.476-03:00  INFO 22596 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752790034476, current=UP, previous=STARTING]
+2025-07-17T19:07:14.478-03:00  INFO 22596 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:dd3cd819d1822ce23091d224d3798843: registering service...
+2025-07-17T19:07:14.581-03:00  INFO 22596 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:dd3cd819d1822ce23091d224d3798843 - registration status: 204
+2025-07-17T19:07:15.491-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:07:15.493-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-07-17T19:07:15.537-03:00  INFO 22596 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3d60deff:0/SimpleConnection@6ce9f686 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59237]
+2025-07-17T19:07:15.581-03:00  INFO 22596 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Started MscardsApplication in 9.368 seconds (process running for 10.027)
+2025-07-17T19:07:15.648-03:00 ERROR 22596 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] i.g.s.m.i.mqueue.IssueCardSubscriber     : Erro ao receber solicitação de emissão de cartão: No value present
+2025-07-17T19:07:15.879-03:00  INFO 22596 --- [mscards] [RMI TCP Connection(2)-26.244.18.27] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-17T19:07:15.879-03:00  INFO 22596 --- [mscards] [RMI TCP Connection(2)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-17T19:07:15.881-03:00  INFO 22596 --- [mscards] [RMI TCP Connection(2)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-07-17T19:07:54.682-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARDS with eureka with status DOWN
+2025-07-17T19:07:54.682-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752790074682, current=DOWN, previous=UP]
+2025-07-17T19:07:54.682-03:00  INFO 22596 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:dd3cd819d1822ce23091d224d3798843: registering service...
+2025-07-17T19:07:54.689-03:00  INFO 22596 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-07-17T19:07:54.774-03:00  INFO 22596 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:dd3cd819d1822ce23091d224d3798843 - registration status: 204
+2025-07-17T19:07:54.949-03:00  INFO 22596 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-07-17T19:07:54.950-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:07:54.964-03:00  INFO 22596 --- [mscards] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-17T19:07:54.982-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:07:54.989-03:00  WARN 22596 --- [mscards] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-07-17T19:07:55.000-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17T19:07:55.014-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17T19:07:55.018-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:07:58.032-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:07:58.129-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:dd3cd819d1822ce23091d224d3798843 - deregister  status: 200
+2025-07-17T19:07:58.129-03:00  INFO 22596 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-07-17T19:21:09.642-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Starting MscardsApplication using Java 21.0.2 with PID 15644 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards)
+2025-07-17T19:21:09.644-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:21:09.693-03:00  INFO 15644 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-17T19:21:09.694-03:00  INFO 15644 --- [mscards] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-17T19:21:10.804-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17T19:21:10.943-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 2 JPA repository interfaces.
+2025-07-17T19:21:11.216-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10b49a96-fb35-369c-ae8d-f9820cc490f1
+2025-07-17T19:21:11.706-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-07-17T19:21:11.721-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-17T19:21:11.721-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-17T19:21:11.774-03:00  INFO 15644 --- [mscards] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-17T19:21:11.774-03:00  INFO 15644 --- [mscards] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2079 ms
+2025-07-17T19:21:12.043-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-17T19:21:12.195-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:0e1bca67-ceb8-4511-8424-bc4e311dc313 user=SA
+2025-07-17T19:21:12.196-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-17T19:21:12.226-03:00  INFO 15644 --- [mscards] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17T19:21:12.268-03:00  INFO 15644 --- [mscards] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.18.Final
+2025-07-17T19:21:12.294-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-17T19:21:12.499-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-17T19:21:12.559-03:00  INFO 15644 --- [mscards] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-17T19:21:13.256-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-17T19:21:13.298-03:00  INFO 15644 --- [mscards] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:21:13.656-03:00  WARN 15644 --- [mscards] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-17T19:21:15.194-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:21:15.445-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:0e1bca67-ceb8-4511-8424-bc4e311dc313'
+2025-07-17T19:21:15.468-03:00  WARN 15644 --- [mscards] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-17T19:21:16.487-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:21:16.498-03:00  INFO 15644 --- [mscards] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:21:16.530-03:00  WARN 15644 --- [mscards] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:21:16.535-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:21:16.657-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 59938 (http) with context path '/'
+2025-07-17T19:21:16.659-03:00  INFO 15644 --- [mscards] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59938
+2025-07-17T19:21:16.663-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:21:16.685-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:21:16.688-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:21:16.695-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:21:16.696-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:21:17.013-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:21:17.015-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:21:17.016-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:21:17.018-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752790877017 with initial instances count: 0
+2025-07-17T19:21:17.021-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARDS with eureka with status UP
+2025-07-17T19:21:17.022-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752790877022, current=UP, previous=STARTING]
+2025-07-17T19:21:17.023-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:acc5881800352b0359b7aeecfc29e1ad: registering service...
+2025-07-17T19:21:17.130-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:acc5881800352b0359b7aeecfc29e1ad - registration status: 204
+2025-07-17T19:21:18.042-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:21:18.044-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-07-17T19:21:18.093-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#49df5404:0/SimpleConnection@1b633276 [delegate=amqp://guest@127.0.0.1:5672/, localPort=59943]
+2025-07-17T19:21:18.165-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Started MscardsApplication in 10.122 seconds (process running for 11.004)
+2025-07-17T19:21:18.286-03:00  INFO 15644 --- [mscards] [RMI TCP Connection(4)-26.244.18.27] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-17T19:21:18.288-03:00  INFO 15644 --- [mscards] [RMI TCP Connection(4)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-17T19:21:18.293-03:00  INFO 15644 --- [mscards] [RMI TCP Connection(4)-26.244.18.27] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-07-17T19:21:47.024-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2025-07-17T19:21:47.025-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:21:47.108-03:00  INFO 15644 --- [mscards] [DiscoveryClient-CacheRefreshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:26:16.702-03:00  INFO 15644 --- [mscards] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:28:14.548-03:00  INFO 15644 --- [mscards] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 13 deletions, 1 modification)
+2025-07-17T19:28:14.551-03:00  INFO 15644 --- [mscards] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARDS with eureka with status DOWN
+2025-07-17T19:28:14.551-03:00  INFO 15644 --- [mscards] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752791294551, current=DOWN, previous=UP]
+2025-07-17T19:28:14.551-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:acc5881800352b0359b7aeecfc29e1ad: registering service...
+2025-07-17T19:28:14.556-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-07-17T19:28:14.634-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:acc5881800352b0359b7aeecfc29e1ad - registration status: 204
+2025-07-17T19:28:15.229-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-07-17T19:28:15.230-03:00  INFO 15644 --- [mscards] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:28:15.237-03:00  INFO 15644 --- [mscards] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-17T19:28:15.254-03:00  INFO 15644 --- [mscards] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:28:15.264-03:00  WARN 15644 --- [mscards] [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-07-17T19:28:15.264-03:00  INFO 15644 --- [mscards] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-17T19:28:15.267-03:00  INFO 15644 --- [mscards] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-17T19:28:15.268-03:00  INFO 15644 --- [mscards] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:28:18.269-03:00  WARN 15644 --- [mscards] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-07-17T19:28:18.269-03:00  WARN 15644 --- [mscards] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-07-17T19:28:18.269-03:00  INFO 15644 --- [mscards] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:28:18.362-03:00  INFO 15644 --- [mscards] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:acc5881800352b0359b7aeecfc29e1ad - deregister  status: 200
+2025-07-17T19:28:18.363-03:00  INFO 15644 --- [mscards] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-07-17T19:28:19.545-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Starting MscardsApplication using Java 21.0.2 with PID 15644 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards)
+2025-07-17T19:28:19.545-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:28:19.939-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17T19:28:19.947-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2025-07-17T19:28:20.009-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10b49a96-fb35-369c-ae8d-f9820cc490f1
+2025-07-17T19:28:20.075-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-07-17T19:28:20.076-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-17T19:28:20.076-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-17T19:28:20.097-03:00  INFO 15644 --- [mscards] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-17T19:28:20.097-03:00  INFO 15644 --- [mscards] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 549 ms
+2025-07-17T19:28:20.182-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-07-17T19:28:20.184-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:95131911-1b26-49ee-ace4-cf82e13c65c8 user=SA
+2025-07-17T19:28:20.185-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-07-17T19:28:20.186-03:00  INFO 15644 --- [mscards] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17T19:28:20.189-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-17T19:28:20.196-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-17T19:28:20.198-03:00  INFO 15644 --- [mscards] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-17T19:28:20.243-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-17T19:28:20.246-03:00  INFO 15644 --- [mscards] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:28:20.328-03:00  WARN 15644 --- [mscards] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-17T19:28:21.514-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:21.626-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:95131911-1b26-49ee-ace4-cf82e13c65c8'
+2025-07-17T19:28:21.635-03:00  WARN 15644 --- [mscards] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-17T19:28:22.647-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:22.654-03:00  INFO 15644 --- [mscards] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:28:22.664-03:00  WARN 15644 --- [mscards] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:28:22.667-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:28:22.702-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 60099 (http) with context path '/'
+2025-07-17T19:28:22.703-03:00  INFO 15644 --- [mscards] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60099
+2025-07-17T19:28:22.703-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:28:22.705-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:28:22.706-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:28:22.801-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:28:22.801-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:28:22.801-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:28:22.801-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752791302801 with initial instances count: 2
+2025-07-17T19:28:22.802-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARDS with eureka with status UP
+2025-07-17T19:28:22.803-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752791302803, current=UP, previous=STARTING]
+2025-07-17T19:28:22.803-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:072dda65a08d6e30b94c43d285813c55: registering service...
+2025-07-17T19:28:22.889-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:072dda65a08d6e30b94c43d285813c55 - registration status: 204
+2025-07-17T19:28:23.052-03:00  INFO 15644 --- [mscards] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 13 class path changes (13 additions, 0 deletions, 0 modifications)
+2025-07-17T19:28:23.812-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:23.812-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-07-17T19:28:23.820-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4e148184:0/SimpleConnection@977ff36 [delegate=amqp://guest@127.0.0.1:5672/, localPort=60106]
+2025-07-17T19:28:23.832-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Started MscardsApplication in 5.39 seconds (process running for 436.671)
+2025-07-17T19:28:23.832-03:00  INFO 15644 --- [mscards] [Thread-9] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARDS with eureka with status DOWN
+2025-07-17T19:28:23.833-03:00  INFO 15644 --- [mscards] [Thread-9] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752791303833, current=DOWN, previous=UP]
+2025-07-17T19:28:23.833-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:072dda65a08d6e30b94c43d285813c55: registering service...
+2025-07-17T19:28:23.835-03:00  INFO 15644 --- [mscards] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-17T19:28:23.835-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-07-17T19:28:23.908-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:072dda65a08d6e30b94c43d285813c55 - registration status: 204
+2025-07-17T19:28:24.836-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-07-17T19:28:24.837-03:00  INFO 15644 --- [mscards] [Thread-9] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:28:24.842-03:00  INFO 15644 --- [mscards] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-17T19:28:24.847-03:00  INFO 15644 --- [mscards] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:28:24.848-03:00  WARN 15644 --- [mscards] [Thread-9] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-07-17T19:28:24.848-03:00  INFO 15644 --- [mscards] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-07-17T19:28:24.848-03:00  INFO 15644 --- [mscards] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-07-17T19:28:24.849-03:00  INFO 15644 --- [mscards] [Thread-9] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:28:27.854-03:00  INFO 15644 --- [mscards] [Thread-9] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:28:27.951-03:00  INFO 15644 --- [mscards] [Thread-9] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:072dda65a08d6e30b94c43d285813c55 - deregister  status: 200
+2025-07-17T19:28:27.951-03:00  INFO 15644 --- [mscards] [Thread-9] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-07-17T19:28:29.055-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Starting MscardsApplication using Java 21.0.2 with PID 15644 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscards)
+2025-07-17T19:28:29.055-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:28:29.381-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-17T19:28:29.395-03:00  INFO 15644 --- [mscards] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2025-07-17T19:28:29.460-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=10b49a96-fb35-369c-ae8d-f9820cc490f1
+2025-07-17T19:28:29.510-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2025-07-17T19:28:29.510-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-17T19:28:29.510-03:00  INFO 15644 --- [mscards] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-17T19:28:29.532-03:00  INFO 15644 --- [mscards] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-17T19:28:29.532-03:00  INFO 15644 --- [mscards] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2025-07-17T19:28:29.596-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-07-17T19:28:29.597-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:2c118b34-5099-4bc5-8511-390cf58e7997 user=SA
+2025-07-17T19:28:29.597-03:00  INFO 15644 --- [mscards] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-07-17T19:28:29.599-03:00  INFO 15644 --- [mscards] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-17T19:28:29.601-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-17T19:28:29.609-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-17T19:28:29.611-03:00  INFO 15644 --- [mscards] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-07-17T19:28:29.653-03:00  INFO 15644 --- [mscards] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-17T19:28:29.659-03:00  INFO 15644 --- [mscards] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:28:29.726-03:00  WARN 15644 --- [mscards] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-17T19:28:30.830-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:30.903-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:2c118b34-5099-4bc5-8511-390cf58e7997'
+2025-07-17T19:28:30.908-03:00  WARN 15644 --- [mscards] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-07-17T19:28:31.918-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:31.923-03:00  INFO 15644 --- [mscards] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:28:31.931-03:00  WARN 15644 --- [mscards] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:28:31.935-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:28:31.967-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 60109 (http) with context path '/'
+2025-07-17T19:28:31.968-03:00  INFO 15644 --- [mscards] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60109
+2025-07-17T19:28:31.968-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:28:31.970-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:28:32.060-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:28:32.060-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:28:32.060-03:00  INFO 15644 --- [mscards] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:28:32.060-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752791312060 with initial instances count: 1
+2025-07-17T19:28:32.061-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCARDS with eureka with status UP
+2025-07-17T19:28:32.061-03:00  INFO 15644 --- [mscards] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752791312061, current=UP, previous=STARTING]
+2025-07-17T19:28:32.062-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:570c5b21e75cf5900b781d26f311c4ed: registering service...
+2025-07-17T19:28:32.143-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:570c5b21e75cf5900b781d26f311c4ed - registration status: 204
+2025-07-17T19:28:33.077-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:28:33.078-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2025-07-17T19:28:33.083-03:00  INFO 15644 --- [mscards] [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#e78ce0e:0/SimpleConnection@17243d0d [delegate=amqp://guest@127.0.0.1:5672/, localPort=60121]
+2025-07-17T19:28:33.094-03:00  INFO 15644 --- [mscards] [restartedMain] i.g.smfmo.mscards.MscardsApplication     : Started MscardsApplication in 5.087 seconds (process running for 445.934)
+2025-07-17T19:28:33.096-03:00  INFO 15644 --- [mscards] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-07-17T19:28:42.148-03:00  INFO 15644 --- [mscards] [http-nio-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-17T19:28:42.148-03:00  INFO 15644 --- [mscards] [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-17T19:28:42.151-03:00  INFO 15644 --- [mscards] [http-nio-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-07-17T19:29:02.987-03:00  INFO 15644 --- [mscards] [http-nio-auto-3-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 189 ms
+2025-07-17T19:30:33.305-03:00 ERROR 15644 --- [mscards] [http-nio-auto-3-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Ambiguous handler methods mapped for '/cards': {public org.springframework.http.ResponseEntity io.github.smfmo.mscards.application.CardsController.getCardsByCustomer(java.lang.String), public org.springframework.http.ResponseEntity io.github.smfmo.mscards.application.CardsController.getCardsIncome(java.lang.Long)}] with root cause
+
+java.lang.IllegalStateException: Ambiguous handler methods mapped for '/cards': {public org.springframework.http.ResponseEntity io.github.smfmo.mscards.application.CardsController.getCardsByCustomer(java.lang.String), public org.springframework.http.ResponseEntity io.github.smfmo.mscards.application.CardsController.getCardsIncome(java.lang.Long)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:431) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:509) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.8.jar:6.2.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.42.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.8.jar:6.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.42.jar:10.1.42]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-07-17T19:33:31.974-03:00  INFO 15644 --- [mscards] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:34:21.000-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCARDS with eureka with status DOWN
+2025-07-17T19:34:21.001-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752791661000, current=DOWN, previous=UP]
+2025-07-17T19:34:21.001-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:570c5b21e75cf5900b781d26f311c4ed: registering service...
+2025-07-17T19:34:21.005-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2025-07-17T19:34:21.087-03:00  INFO 15644 --- [mscards] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:570c5b21e75cf5900b781d26f311c4ed - registration status: 204
+2025-07-17T19:34:21.552-03:00  INFO 15644 --- [mscards] [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2025-07-17T19:34:21.552-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:34:21.562-03:00  INFO 15644 --- [mscards] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-07-17T19:34:21.569-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-17T19:34:21.571-03:00  WARN 15644 --- [mscards] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-07-17T19:34:21.571-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-07-17T19:34:21.572-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-07-17T19:34:21.572-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:34:24.580-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:34:24.663-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCARDS/mscards:570c5b21e75cf5900b781d26f311c4ed - deregister  status: 200
+2025-07-17T19:34:24.663-03:00  INFO 15644 --- [mscards] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
