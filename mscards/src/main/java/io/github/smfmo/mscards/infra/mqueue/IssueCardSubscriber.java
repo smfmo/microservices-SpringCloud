@@ -8,10 +8,12 @@ import io.github.smfmo.mscards.domain.CustomerCards;
 import io.github.smfmo.mscards.infra.repository.CardRepository;
 import io.github.smfmo.mscards.infra.repository.CustomerCardsRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
+@Slf4j
 @Component
 @RequiredArgsConstructor
 public class IssueCardSubscriber {
@@ -34,7 +36,7 @@ public class IssueCardSubscriber {
             customerCardsRepository.save(customerCards);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Erro ao receber solicitação de emissão de cartão: {}", e.getMessage());
         }
     }
 }
