@@ -16,4 +16,7 @@ COPY --from=build ./build/target/*jar ./app.jar
 
 EXPOSE 8761
 
+ENV USERNAME_SECURITY='admin'
+ENV PASSWORD_SECURITY='admin4321'
+
 ENTRYPOINT exec java -jar app.jar
