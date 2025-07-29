@@ -9,8 +9,6 @@ COPY . .
 
 RUN mvn clean package -DskipTests
 
-
-
 FROM amazoncorretto:${JDK_VERSION}
 
 WORKDIR /app
@@ -21,5 +19,6 @@ ENV RABBIT_HOST='rabbitmq'
 ENV RABBIT_USERNAME='guest'
 ENV RABBIT_PASSWORD='guest'
 ENV URL_EUREKA='http://admin:admin4321@eureka:8761/eureka'
+ENV SPRING_PROFILES_ACTIVE='default'
 
 ENTRYPOINT exec java -jar app.jar

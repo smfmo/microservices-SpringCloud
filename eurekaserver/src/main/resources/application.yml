@@ -11,3 +11,14 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
+
+# Desenvolvimento Local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  security:
+    user:
+      name: admin
+      password: admin4321

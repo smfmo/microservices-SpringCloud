@@ -2,7 +2,7 @@ spring:
   application:
     name: mscreditassessor
   rabbitmq:
-    host: ${RABBIT_HOST:localhost}
+    host: ${RABBIT_HOST}
     username: ${RABBIT_USERNAME}
     password: ${RABBIT_PASSWORD}
     port: 5672
@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${URL_EUREKA:http://admin:admin4321@localhost:8761/eureka}
+      defaultZone: ${URL_EUREKA}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 mq:
@@ -25,3 +25,19 @@ management:
 logging:
   file:
     name: ./logs/log-file.log
+
+# Desenvolvimento local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+    port: 5672
+eureka:
+    client:
+      service-url:
+        defaultZone: ${URL_EUREKA:http://admin:admin4321@localhost:8761/eureka}

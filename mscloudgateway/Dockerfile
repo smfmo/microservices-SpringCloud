@@ -9,14 +9,15 @@ COPY . .
 
 RUN mvn clean package -DskipTests
 
-
-
 FROM amazoncorretto:${JDK_VERSION}
 
 WORKDIR /app
 
 COPY --from=build ./build/target/*jar ./app.jar
 
+EXPOSE 8080
+
+ENV URL_KEYCLOACK='http://keycloak:8080/realms/msCourseRealm'
 ENV URL_EUREKA='http://admin:admin4321@eureka:8761/eureka'
 ENV SPRING_PROFILES_ACTIVE='default'
 

@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${URL_EUREKA:http://admin:admin4321@localhost:8761/eureka}
+      defaultZone: ${URL_EUREKA}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 management:
@@ -16,4 +16,15 @@ management:
         include: '*'
 logging:
   file:
-    name: .logs/log-file.log
+    name: .logs/log-file.lo
+
+# Desenvolvimento local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin4321@localhost:8761/eureka
