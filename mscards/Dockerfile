@@ -1,4 +1,7 @@
-FROM maven:3.8.8-amazoncorretto-21-al2023 as build
+ARG MAVEN_VERSION='3.8.8-amazoncorretto-21-al2023'
+ARG JDK_VERSION='21.0.5'
+
+FROM maven:${MAVEN_VERSION} as build
 
 WORKDIR /build
 
@@ -6,7 +9,9 @@ COPY . .
 
 RUN mvn clean package -DskipTests
 
-FROM amazoncorretto:21.0.5
+
+
+FROM amazoncorretto:${JDK_VERSION}
 
 WORKDIR /app
 

@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${URL_EUREKA:http://admin:admin4321@eureka:8761/eureka}
+      defaultZone: ${URL_EUREKA:http://admin:admin4321@localhost:8761/eureka}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 mq:
