@@ -2,7 +2,7 @@ spring:
   application:
     name: mscreditassessor
   rabbitmq:
-    host: localhost
+    host: ${RABBIT_HOST:localhost}
     username: ${RABBIT_USERNAME}
     password: ${RABBIT_PASSWORD}
     port: 5672
@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: ${URL_EUREKA}
+      defaultZone: ${URL_EUREKA:http://admin:admin4321@localhost:8761/eureka}
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 mq:
