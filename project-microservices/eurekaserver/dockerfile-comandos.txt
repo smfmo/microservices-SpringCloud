@@ -1,0 +1,21 @@
+-- ARQUIVO DESTINADO A COMANDOS DO DOCKERFILE --
+
+(FROM openjdk:21-jdk)
+- Define a imagem base do container:
+1. openjdk: Imagem oficial com Java Development Kit
+2. 21: Versão do Java (Jdk 21)
+3. -jdk: variante que inclui ferramentas de desenvolvimento
+ (em oposição a -jre que é só o runtime).
+ Essa imagem já vem com todas as dependências necessárias para compilar e executar a aplicação.
+
+(COPY target/nome-0.0.1-SNAPSHOT.jar /app/app.jar)
+- Copia o arquivo JAR da máquina local para dentro do container:
+1. target/...: assume que foi construido o JAR com MAVEN/GRADLE
+2. /app/app.jar: Dentro do container, o JAR será renomeado para
+ app.jar e colocado no diretório /app
+
+(CMD ["java", "-jar", "/app/app.jar"])
+- Define o comando padrão que será executado quando o container iniciar:
+1. java: invoca a JVM
+2. -jar: Indica que o próximo argumento é um arquivo JAR executável
+3. /app/app.jar: Caminho do JAR dentro do container (Definido no COPY)

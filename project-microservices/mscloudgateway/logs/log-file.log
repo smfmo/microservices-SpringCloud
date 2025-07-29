@@ -1,0 +1,77 @@
+2025-07-17T19:02:59.712-03:00  INFO 6352 --- [mscloudgateway] [main] i.g.s.m.MscloudgatewayApplication        : Starting MscloudgatewayApplication using Java 21.0.2 with PID 6352 (C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscloudgateway\target\classes started by samm1 in C:\Users\samm1\OneDrive\Documentos\microservices-spring\mscloudgateway)
+2025-07-17T19:02:59.714-03:00  INFO 6352 --- [mscloudgateway] [main] i.g.s.m.MscloudgatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2025-07-17T19:03:00.748-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8defb1ff-1209-3272-b743-d6b004e08a2d
+2025-07-17T19:03:01.169-03:00  WARN 6352 --- [mscloudgateway] [main] GatewayClassPathWarningAutoConfiguration : 
+
+**********************************************************
+
+The artifact spring-cloud-gateway-server is deprecated. It will be removed in the next major release. Please add spring-cloud-gateway-server-webflux dependency.
+
+**********************************************************
+
+
+2025-07-17T19:03:02.204-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:03:03.227-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2025-07-17T19:03:03.442-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2025-07-17T19:03:03.443-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2025-07-17T19:03:04.591-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:03:04.670-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoints beneath base path '/actuator'
+2025-07-17T19:03:04.930-03:00  INFO 6352 --- [mscloudgateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-07-17T19:03:04.943-03:00  WARN 6352 --- [mscloudgateway] [main] s.w.s.StarterDeprecatedAutoConfiguration : 
+
+**********************************************************
+
+spring-cloud-starter-gateway is deprecated. It will be removed in the next major release. Please use spring-cloud-starter-gateway-server-webflux instead.
+
+**********************************************************
+
+
+2025-07-17T19:03:04.948-03:00  WARN 6352 --- [mscloudgateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-07-17T19:03:04.998-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-07-17T19:03:05.014-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-07-17T19:03:05.017-03:00  INFO 6352 --- [mscloudgateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:03:05.023-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-07-17T19:03:05.024-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-07-17T19:03:05.378-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-07-17T19:03:05.380-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-07-17T19:03:05.382-03:00  INFO 6352 --- [mscloudgateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-07-17T19:03:05.383-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1752789785382 with initial instances count: 3
+2025-07-17T19:03:05.386-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MSCLOUDGATEWAY with eureka with status UP
+2025-07-17T19:03:05.387-03:00  INFO 6352 --- [mscloudgateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752789785387, current=UP, previous=STARTING]
+2025-07-17T19:03:05.388-03:00  INFO 6352 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/localhost:mscloudgateway:8080: registering service...
+2025-07-17T19:03:05.512-03:00  INFO 6352 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/localhost:mscloudgateway:8080 - registration status: 204
+2025-07-17T19:03:05.566-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080 (http)
+2025-07-17T19:03:05.567-03:00  INFO 6352 --- [mscloudgateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2025-07-17T19:03:06.586-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:03:07.596-03:00  INFO 6352 --- [mscloudgateway] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2025-07-17T19:03:07.617-03:00  INFO 6352 --- [mscloudgateway] [main] i.g.s.m.MscloudgatewayApplication        : Started MscloudgatewayApplication in 9.349 seconds (process running for 10.018)
+2025-07-17T19:04:16.721-03:00  WARN 6352 --- [mscloudgateway] [parallel-2] o.s.c.l.core.RoundRobinLoadBalancer      : No servers available for service: mscards
+2025-07-17T19:08:04.188-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MSCLOUDGATEWAY with eureka with status DOWN
+2025-07-17T19:08:04.188-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1752790084188, current=DOWN, previous=UP]
+2025-07-17T19:08:04.188-03:00  INFO 6352 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/localhost:mscloudgateway:8080: registering service...
+2025-07-17T19:08:04.190-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] o.s.b.w.embedded.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-17T19:08:04.194-03:00  INFO 6352 --- [mscloudgateway] [netty-shutdown] o.s.b.w.embedded.netty.GracefulShutdown  : Graceful shutdown complete
+2025-07-17T19:08:04.266-03:00  INFO 6352 --- [mscloudgateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/localhost:mscloudgateway:8080 - registration status: 204
+2025-07-17T19:08:05.032-03:00  INFO 6352 --- [mscloudgateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-07-17T19:08:06.264-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-07-17T19:08:09.272-03:00  WARN 6352 --- [mscloudgateway] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-07-17T19:08:09.272-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-07-17T19:08:09.358-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MSCLOUDGATEWAY/localhost:mscloudgateway:8080 - deregister  status: 200
+2025-07-17T19:08:09.359-03:00  INFO 6352 --- [mscloudgateway] [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

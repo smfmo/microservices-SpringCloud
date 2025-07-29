@@ -1,0 +1,24 @@
+﻿spring:
+  application:
+    name: eurekaServer
+  security:
+    user:
+      name: ${USERNAME_SECURITY}
+      password: ${PASSWORD_SECURITY}
+server:
+  port: 8761 #porta padrao do eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+# Desenvolvimento Local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  security:
+    user:
+      name: admin
+      password: admin4321

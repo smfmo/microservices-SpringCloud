@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: mscloudgateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${URL_KEYCLOACK}
+server:
+  port: 8080
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${URL_EUREKA}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file:
+    name: ./logs/log-file.log
+
+# Desenvolvimento local
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/msCourseRealm
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://admin:admin4321@localhost:8761/eureka
